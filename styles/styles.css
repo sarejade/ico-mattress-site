@@ -1,0 +1,64 @@
+header {
+  background-image: url('../images/gilles-lambert-249996.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  background-attachment: fixed;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  line-height: 0;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: left;
+  line-height: 0;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: left;
+  line-height: 0;
+}
+/* changes font colour to yellow */
+.yellow {
+  color: #e4ac00;
+}
+/* changes font colour to white */
+.white {
+  color: #fff;
+}
+/* styles the tagline on the header and highlight */
+.tagline {
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+/* section 1 background image */
+.image-1 {
+  background-image: url('../images/charles-deluvio-351207.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    min-height: 100vh;
+}
+/* section 2 background image */
+.image-2 {
+  background-image: url('../images/rhema-kallianpur-275251.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    min-height: 100vh;
+}
