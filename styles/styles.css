@@ -1,3 +1,57 @@
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+  boxing-sizing: border-box;
+}
+/* Layout, Padding and Margin */
+.padded {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+/* typography */
+h1, h2, h3 {
+font-family: 'Changa One', cursive, sans-serif;
+}
+h1 {
+  font-size: 80px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 50px;
+  text-align: left;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: left;
+}
+p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+h2.center {
+  text-align: center;
+}
+/* styles the tagline on the header and highlight */
+.tagline {
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+}
+/* changes font colour to yellow */
+.yellow {
+  color: #e4ac00;
+}
+/* changes font colour to white */
+.white {
+  color: #fff;
+}
+/* --- IMAGES --- */
 header {
   background-image: url('../images/gilles-lambert-249996.jpg');
   background-size: cover;
@@ -8,39 +62,6 @@ header {
   min-height: 100vh;
   text-align: center;
   background-attachment: fixed;
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-h1 {
-  font-family: sans-serif;
-  font-size: 60px;
-  line-height: 0;
-}
-h2 {
-  font-family: sans-serif;
-  font-size: 40px;
-  text-align: left;
-  line-height: 0;
-}
-h3 {
-  font-family: sans-serif;
-  font-size: 30px;
-  text-align: left;
-  line-height: 0;
-}
-/* changes font colour to yellow */
-.yellow {
-  color: #e4ac00;
-}
-/* changes font colour to white */
-.white {
-  color: #fff;
-}
-/* styles the tagline on the header and highlight */
-.tagline {
-  font-family: sans-serif;
-  font-size: 24px;
-  line-height: 1.5;
 }
 /* section 1 background image */
 .image-1 {
@@ -50,7 +71,7 @@ h3 {
   justify-content: center;
   align-items: center;
   position: relative;
-    min-height: 100vh;
+  min-height: 100vh;
 }
 /* section 2 background image */
 .image-2 {
@@ -60,5 +81,13 @@ h3 {
   justify-content: center;
   align-items: center;
   position: relative;
-    min-height: 100vh;
+  min-height: 100vh;
+}
+/* highlight background image */
+.highlight {
+  background-image: url('../images/joanna-kosinska-129039.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: 80vh;
 }
