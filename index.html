@@ -8,57 +8,73 @@
       <!-- stylesheet -->
       <link rel="stylesheet" type="text/css" href="styles/gridlex.css">
       <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+      <meta name="viewport" content="width=device-width, inital-scale=1">
   </head>
   <body>
 <!-- START Header -->
     <header class="grid-middle-center">
-      <h1><span class="yellow">sleep</span> <span class="white">like a baby</a></h1>
-      <p class="tagline white">Lorem ipsum dolor sit amet</p>
+      <div>
+        <h1><span class="yellow">sleep</span> <span class="white">like a baby</a></h1>
+          <p class="tagline white">Lorem ipsum dolor sit amet</p>
+    </div>
     </header>
 <!-- END Header -->
 <!-- START Section 1 -->
     <section class="grid">
-      <div class="col-6 image-1">
+      <div class="col-6_sm-12 image-1">
       </div>
-      <div class="col-6 grid-middle-left">
+      <div class="col-6_sm-12 grid-middle-left white-space">
+        <div>
         <h3 class="padded">built to last a <span class="yellow">lifetime</span></h3>
         <p class="padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+      </div>
       </div>
     </section>
 <!-- END Section 1 -->
 <!-- START Section 2 -->
     <section class="grid-reverse">
-      <div class="col-6 image-2">
+      <div class="col-6_sm-12 image-2">
       </div>
-      <div class="col-6 grid-middle-left">
+      <div class="col-6_sm-12 grid-middle-left white-space">
+        <div>
         <h3 class="padded">so <span class="yellow">soft</span> you&#39;ll melt</h3>
         <p class="padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+      </div>
       </div>
     </section>
 <!-- END Section 2 -->
 <!-- START Highlight -->
     <section class="highlight grid-middle-center">
-      <p class="tagline">Lorem ipsum dolor sit amet</p>
-      <h2 class="center">a good night <span class="white">sleep</span></h2>
+      <div>
+        <p class="tagline">Lorem ipsum dolor sit amet</p>
+        <h2 class="center">a good night <span class="white">sleep</span></h2>
+      </div>
     </section>
     <!-- END Highlight -->
     <!-- START Testimonal -->
-    <section>
-      <blockquote>
-        <p  class="padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>&ndash; A very happy customer</p>
+    <section class="grid-top white-margin">
+      <blockquote class="col-12">
+        <p class="padded blockquote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </blockquote>
+      <p class="col-12 text-center"><span class="center-quote">&ndash; A very happy customer</span></p>
     </section>
 <!-- END Testimonal -->
 <!-- START Footer -->
-    <footer class="grid">
-      <div class="col-6">
+    <footer class="grid-middle white-margin">
+      <div class="col-6_sm-12">
         <h2 class="padded"><span class="white">let&#39;s</span> <span class="yellow">connect</span></h2>
-        <p class="padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="padded white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div class="col-6">
+      <div class="col-6_sm-12 text-center">
+        <form>
+           <input type="text" name="name" placeholder="Your Name"><br>
+           <input type="text" name="email" placeholder="Your Email"><br>
+           <textarea type="text" name="message" placeholder="Tell us what you want to say..."></textarea><br>
+           <input type="submit" value="SUBMIT">
+         </form>
       </div>
     </footer>
 <!-- END Footer -->

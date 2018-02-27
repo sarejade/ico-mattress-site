@@ -2,12 +2,19 @@
 * {
   padding: 0;
   margin: 0;
-  boxing-sizing: border-box;
+  box-sizing: border-box;
 }
 /* Layout, Padding and Margin */
 .padded {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.white-space {
+min-height: 50vh;
+}
+.white-margin {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 /* typography */
 h1, h2, h3 {
@@ -18,12 +25,12 @@ h1 {
   line-height: 1.2;
 }
 h2 {
-  font-size: 50px;
+  font-size: 60px;
   text-align: left;
   line-height: 1.5;
 }
 h3 {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.5;
   text-align: left;
 }
@@ -36,9 +43,12 @@ p {
 h2.center {
   text-align: center;
 }
+.text-center {
+  text-align: center;
+}
 /* styles the tagline on the header and highlight */
 .tagline {
-  font-family: sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 30px;
   line-height: 1.5;
   text-align: center;
@@ -51,6 +61,44 @@ h2.center {
 .white {
   color: #fff;
 }
+.center-quote {
+  display: inline-block;
+  position: relative;
+  margin-right: -250px;
+}
+.blockquote {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 20px;
+}
+blockquote {
+  display:block;
+  background: #fff;
+  padding: 50px 20px 0px 45px;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+blockquote::after{
+  content: "\201D";
+  right: 50px;
+}
+
+blockquote::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  left: 50px;
+}
+
+blockquote::before, blockquote::after{
+  /*Font*/
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  top: -5px;
+}
+
 /* --- IMAGES --- */
 header {
   background-image: url('../images/gilles-lambert-249996.jpg');
@@ -77,7 +125,7 @@ header {
 .image-2 {
   background-image: url('../images/rhema-kallianpur-275251.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -87,7 +135,73 @@ header {
 .highlight {
   background-image: url('../images/joanna-kosinska-129039.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 20% 20%;
   text-align: center;
   min-height: 80vh;
+}
+footer {
+  background-color: #192b37;
+  min-height: 100vh;
+}
+/* form */
+input, textarea {
+  width: 50%;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  font-family: 'Maven Pro', sans-serif;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+input[type=submit]{
+    background-color: #ffbe00;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 4px 0px;
+    cursor: pointer;
+    width: 50%;
+    -webkit-appearance: none;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-width: 800px) {
+  blockquote::before {
+    left: 15px;
+}
+blockquote::after {
+  right: 15px;
+}
+.center-quote {
+    margin-right: -150px;
+}
+.blockquote {
+    font-size: 16px;
+}
+.padded {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+h1 {
+    font-size: 32px;
+}
+.tagline {
+    font-size: 18px;
+}
+h3 {
+    font-size: 24px;
+}
+p {
+    font-size: 12px;
+}
+h2 {
+    font-size: 28px;
+}
+input, textarea, input[type=submit] {
+    width: 80%;
+  }
 }
